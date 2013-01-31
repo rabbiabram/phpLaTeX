@@ -49,9 +49,9 @@ class LaTex
     public function colorized($red = 0, $blue = 0, $green = 0) {
         #there must be a better way of doing this. It's not even particularly clean.
         $hex=array("","","");
-        if(strlen($hex[0]=dechex(min(256*$r,255)))==1){ $hex[0]="0".$hex[0]; }
-        if(strlen($hex[1]=dechex(min(256*$g,255)))==1){ $hex[1]="0".$hex[1]; }
-        if(strlen($hex[2]=dechex(min(256*$b,255)))==1){ $hex[2]="0".$hex[2]; }
+        if(strlen($hex[0]=dechex(min(256*$red,255)))==1){ $hex[0]="0".$hex[0]; }
+        if(strlen($hex[1]=dechex(min(256*$green,255)))==1){ $hex[1]="0".$hex[1]; }
+        if(strlen($hex[2]=dechex(min(256*$blue,255)))==1){ $hex[2]="0".$hex[2]; }
         return implode("",$hex);
     }
 
